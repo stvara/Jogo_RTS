@@ -1,0 +1,14 @@
+#container{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-top: 140px;
+    background-color: rgba(107, 212, 66,0.4);
+    text-align: center;
+    border: 2pt black;
+    border-radius: 30px;
+    
+}
+#erroStatus{
+    color: red;
+}
