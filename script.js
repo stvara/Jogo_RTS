@@ -1,31 +1,30 @@
 /* funções cadastrais*/
 function carregar(){
-var usuario = "";
-var senhaUSR ="";
 var txtlogin = document.getElementsByTagName('span');
 var titulo = document.getElementsByTagName('h1');
 var container = document.getElementById("container");
+    container.innerHTML = `<h1>DORAGONA</h1>
+    <span>Nome:</span> 
+       <input type="text" name="login" id="nomeLogin">
+    <br><br>
+    <span>Cidade:</span>
+      <input type="text" name="login" id="cidadeNome"><br><br>
+      <input type="submit" value="Entrar" onclick="criarCidade()"><br>
+        <P id="erroStatus"></P>`
 }
-//alert(txtlogin[0].innerText)
-function inicio(){
-    container.innerHTML=`<span onclick="entrar()">Entrar</span> <br><span onclick="cadastro()">Entrar</span>` 
-}
-function login(){
+
+function criarCidade(){
   
-    var login = document.getElementById("nomeLogin");
-    let senha = document.getElementById("senhaLogin");
+    var NomeUsr = document.getElementById("nomeLogin");
+    var cidadeNome = document.getElementById("cidadeNome");
     let erro = document.getElementById("erroStatus");
     
  
-    erro.innerText="Usuário não cadastrado";
-   
+    erro.innerText="A cidade está sendo criada...";
+    cidade();
 }
-function cadastro(){
-    txtlogin[0].innerText="Usuário";
-    titulo[0].innerText="CADASTRO";
-    titulo = document.getElementsByTagName('h1'); 
- 
-}
-function entrar(){
-container.innerHTML = `<br><br><br><br><br><br><h1>ENTRADA</h1><span>Login:</span> <input type="text" name="login" id="nomeLogin"><br><br><span>Senha: </span><input type="text" name="login" id="senhaLogin"><br><br><input type="submit" value="Entrar" onclick="login()"><br><P id="erroStatus"></P><span onclick="cadastro()">CADASTRAR</span>`
+
+function cidade(){
+    container.setAttribute("class","container2")
+    container.innerHTML= ""
 }

@@ -1,13 +1,24 @@
-#container{
+.container{
     width: 400px;
-    height: 400px;
+    height: 300px;
     margin: auto;
-    margin-top: 140px;
+    margin-top: 100px;
     background-color: rgba(107, 212, 66,0.4);
     text-align: center;
     border: 2pt black;
     border-radius: 30px;
+    padding-top: 100px;
     
+}
+.container2{
+    width: 600px;
+    height: 500px;
+    margin-top: 50px;
+    background-color: rgba(107, 212, 66,0.4);
+    text-align: center;
+    border:4pt black;
+    border-radius: 30px;
+   
 }
 #erroStatus{
     color: red;
